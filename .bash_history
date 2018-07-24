@@ -114,3 +114,27 @@ sudo node gpiolib.js
 ifconfig
 exi
 exit
+ls
+git init
+git pull https://github.com/grosuana/raspberryPi
+ls
+cd raspi/
+ls
+cd ..
+rm -rf main/ raspi/
+ls
+rm -rf 
+ls
+rm -rf module/
+sudo rm -rf module/
+ls
+git pull
+git pull https://github.com/grosuana/raspberryPi
+ls
+rm README.md 
+ls
+git init
+sudo git pull https://github.com/grosuana/raspberryPi
+ls
+git add
+exit

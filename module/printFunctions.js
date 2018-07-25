@@ -1,5 +1,6 @@
-const board = require('./gpiolib')
-const lcd = require('./lcdlib')
+const board = require('./gpiolib');
+const lcd = require('./lcdlib');
+const _ = require('lodash');
 
 let array = [];
 let index = 0;
@@ -7,17 +8,15 @@ let delay = 300;
 
 
 function doesIdExist(id) {
-    let da = 0;
-    for (let object of array) {
-        if (object.id == id) {
-            da = 1;
-        }
-    }
-    if (da) {
-        return true;
-    } else {
+
+    let ans = _.findIndex(array, function(obj) {
+        return (obj.id === id);
+    })
+    if (ans === -1) {
         return false;
-    };
+    } else {
+        return true;
+    }
 }
 
 async function writeObjectOnLcd(index) {
@@ -37,11 +36,11 @@ function pop() {
 function push(object) {
 
     let index = array.length;
-    if (object.id === undefined) {
+    if (_.isUndefined(object.id)) {
         let i = 0;
-        while (object.id === undefined) {
+        while (_.isUndefined(object.id)) {
 
-            if (doesIdExist(array, i)) {
+            if (doesIdExist(i)) {
                 i++;
             } else {
                 object.id = i;
@@ -50,11 +49,11 @@ function push(object) {
 
     };
 
-    if (object.line1 === undefined) {
+    if (_.isUndefined(object.line1)) {
         object.line1 = '';
     };
 
-    if (object.line2 === undefined) {
+    if (_.isUndefined(object.line2)) {
         object.line2 = '';
     };
 
@@ -67,11 +66,18 @@ function removeByIndex(index) {
 }
 
 function removeById(id) {
-    array.forEach(function(object, index) {
-        if (object.id === id) {
-            array.splice(index, 1);
-        }
-    });
+    
+
+    let indexToRemove = 0;
+    do {
+        indexToRemove = _.findIndex(array, function(obj) {
+            return (obj.id === id);
+        }, indexToRemove)
+
+        _.pullAt(array, indexToRemove);
+
+    } while (indexToRemove !== -1)
+
 }
 
 function displayNext() {

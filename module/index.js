@@ -5,35 +5,35 @@ const board = require('./gpiolib')
 
 let index = 0;
 obj1 = {
-    id: 0,
+    id: 1,
     line1: 'acesta este',
     line2: 'primul ob'
 };
 obj2 = {
-    id: 1,
+    id: 2,
     line1: 'acesta este',
     line2: 'al doilea ob'
 };
 obj3 = {
-    id: 2,
+    id: 3,
     line1: 'acesta este',
     line2: 'al treilea ob'
 };
 obj4 = {
-    id: 3,
+    id: 4,
     line1: 'acesta este',
     line2: 'al patrulea ob'
 };
 
 obj5 = {
-    id: 4,
+    id: 5,
     line1: 'acesta este',
     line2: 'al cincilea ob'
 };
 
 obj6 = {
-    id: 4,
-    line1: 'afisez doar',
+    //id: 4,
+    line1: 'afisez dooar',
     line2: 'o data'
 };
 
@@ -43,11 +43,13 @@ lcd.push(obj2);
 lcd.push(obj3);
 lcd.push(obj4);
 lcd.push(obj5);
+lcd.push(obj6);
+console.log(lcd.pop());
 // console.log(lcd.pop());
 // lcd.displayCurrent();
 // lcd.removeByIndex(2);
 // lcd.displayOnce(obj6);
-
+lcd.removeById(1);
 
 lcd.displayCurrent();
 

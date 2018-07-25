@@ -35,12 +35,12 @@ function doesIdExist(id) {
     };
 }
 
-async function writeObjectOnLcd(object) {
+async function writeObjectOnLcd(index) {
     return new Promise(async function(resolve, reject) {
         await lcd.init ();
         await lcd.clear();
-        await lcd.write(object.line1, 0, 0);
-        await lcd.write(object.line2, 0, 1);
+        await lcd.write(array[index].line1, 0, 0);
+        await lcd.write(array[index].line2, 0, 1);
         resolve();
     });
 
@@ -91,7 +91,8 @@ module.exports = {
     removeById: removeById,
     removeByIndex: removeByIndex,
     push: push,
-    writeObjectOnLcd: writeObjectOnLcd
+    writeObjectOnLcd: writeObjectOnLcd,
+    length: array.length
 }
 
 obj1 = {
@@ -106,6 +107,8 @@ obj2 = {
     line2: 'cdcdcdc'
 };
 
+// push(obj1)
+// console.log(array);
 // async function abc() {
     
 //     await writeObjectOnLcd(obj1);

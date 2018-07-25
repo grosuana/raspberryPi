@@ -1,27 +1,12 @@
-const board = require('./gpiolib.js')
-const lcd = require('./lcdlib.js')
+const board = require('./gpiolib')
+const lcd = require('./lcdlib')
 
-
-//WRITE ON LCD
-// let array = [{
-//         id: 0,
-//         line1: 'acesta este',
-//         line2: 'primul ob'
-//     },
-//     {
-//         id: 1,
-//         line1: 'acesta este',
-//         line2: 'al doilea ob'
-//     },
-//     {
-//         id: 2,
-//         line1: 'acesta este',
-//         line2: 'al treilea ob'
-//     }
-// ];
 let array = [];
+let index = 0;
+let delay = 300;
 
-function doesIdExist(array, id) {
+
+function doesIdExist(id) {
     let da = 0;
     for (let object of array) {
         if (object.id == id) {
@@ -35,20 +20,23 @@ function doesIdExist(array, id) {
     };
 }
 
-async function writeObjectOnLcd(object) {
+async function writeObjectOnLcd(index) {
     return new Promise(async function(resolve, reject) {
+        await lcd.init();
         await lcd.clear();
-        await lcd.write(object.line1, 0, 0);
-        await lcd.write(object.line2, 0, 1);
+        await lcd.write(array[index].line1, 0, 0);
+        await lcd.write(array[index].line2, 0, 1);
         resolve();
     });
-
-
 };
 
-function push(array, recievedObject, index) {
-    
-    index = index || array.length;
+function pop() {
+    return array.pop();
+}
+
+function push(object) {
+
+    let index = array.length;
     if (object.id === undefined) {
         let i = 0;
         while (object.id === undefined) {
@@ -74,11 +62,11 @@ function push(array, recievedObject, index) {
     return object;
 }
 
-function removeByIndex(array, index) {
+function removeByIndex(index) {
     array.splice(index, 1);
 }
 
-function removeById(array, id) {
+function removeById(id) {
     array.forEach(function(object, index) {
         if (object.id === id) {
             array.splice(index, 1);
@@ -86,30 +74,54 @@ function removeById(array, id) {
     });
 }
 
+function displayNext() {
+    setTimeout(function() {
+        if (index === array.length - 1) {
+            writeObjectOnLcd(index = 0);
+        } else {
+            writeObjectOnLcd(++index);
+        }
+    }, delay)
+
+}
+
+function displayCurrent() {
+    setTimeout(function() {
+        writeObjectOnLcd(index);
+    }, delay)
+}
+
+function displayPrevious() {
+    setTimeout(function() {
+        if (index === 0) {
+            writeObjectOnLcd(index = array.length - 1);
+        } else {
+            writeObjectOnLcd(--index);
+        }
+    }, delay)
+
+}
+
+function displayOnce(obj) {
+    setTimeout(function() {
+        return new Promise(async function(resolve, reject) {
+            await lcd.init();
+            await lcd.clear();
+            await lcd.write(obj.line1, 0, 0);
+            await lcd.write(obj.line2, 0, 1);
+            resolve();
+        })
+    }, delay)
+}
+
 module.exports = {
     removeById: removeById,
     removeByIndex: removeByIndex,
     push: push,
-    writeObjectOnLcd: writeObjectOnLcd,
-    init: lcd.init
+    pop: pop,
+    displayOnce: displayOnce,
+    displayPrevious: displayPrevious,
+    displayNext: displayNext,
+    displayCurrent: displayCurrent
+
 }
-
-obj1 = {
-    id: 0,
-    line1: 'ababab',
-    line2: 'ababab'
-};
-
-obj2 = {
-    id: 0,
-    line1: 'cdcdcdcd',
-    line2: 'cdcdcdc'
-};
-
-async function abc() {
-    await lcd.init ();
-    await writeObjectOnLcd(obj1);
-    setTimeout(async function(){await writeObjectOnLcd(obj2); console.log ('rewrewr');}, 3000);
-}
-
-abc();

@@ -1,5 +1,5 @@
 {
-  "name": "board_module",
+  "name": "module_wyliolab",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "lcd": "^2.0.3",
-    "lodash": "^4.17.10",
-    "onoff": "^3.1.0"
+    "onoff": "^3.2.0"
   }
 }

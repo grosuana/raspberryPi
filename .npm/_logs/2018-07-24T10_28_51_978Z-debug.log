@@ -1,0 +1,690 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'firmata' ]
+2 info using npm@6.1.0
+3 info using node@v10.6.0
+4 verbose npm-session d5098a12163df6a6
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly pacote directory manifest for undefined@file:firmata fetched in 23ms
+8 timing stage:loadCurrentTree Completed in 3110ms
+9 silly install loadIdealTree
+10 silly install cloneCurrentTreeToIdealTree
+11 timing stage:loadIdealTree:cloneCurrentTree Completed in 19ms
+12 silly install loadShrinkwrap
+13 timing stage:loadIdealTree:loadShrinkwrap Completed in 1067ms
+14 silly install loadAllDepsIntoIdealTree
+15 silly resolveWithNewModule firmata@0.19.1 checking installable status
+16 silly removeObsoleteDep removing firmata@0.19.1 from the tree as its been replaced by a newer version or is no longer required
+17 silly removeObsoleteDep removing browser-serialport@2.1.0 from the tree as its been replaced by a newer version or is no longer required
+18 silly removeObsoleteDep removing serialport@6.0.5 from the tree as its been replaced by a newer version or is no longer required
+19 silly removeObsoleteDep removing prebuild-install@2.5.3 from the tree as its been replaced by a newer version or is no longer required
+20 http fetch GET 304 https://registry.npmjs.org/browser-serialport 431ms (from cache)
+21 silly pacote tag manifest for browser-serialport@latest fetched in 478ms
+22 silly resolveWithNewModule browser-serialport@2.1.0 checking installable status
+23 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 1755ms
+24 timing stage:loadIdealTree Completed in 3310ms
+25 silly currentTree firmata_test@1.0.0
+25 silly currentTree ├── @serialport/parser-byte-length@1.0.5
+25 silly currentTree ├── @serialport/parser-cctalk@1.0.5
+25 silly currentTree ├── @serialport/parser-delimiter@1.0.5
+25 silly currentTree ├── @serialport/parser-readline@1.0.5
+25 silly currentTree ├── @serialport/parser-ready@1.0.5
+25 silly currentTree ├── @serialport/parser-regex@1.0.5
+25 silly currentTree ├── ansi-bgblack@0.1.1
+25 silly currentTree ├── ansi-bgblue@0.1.1
+25 silly currentTree ├── ansi-bgcyan@0.1.1
+25 silly currentTree ├── ansi-bggreen@0.1.1
+25 silly currentTree ├── ansi-bgmagenta@0.1.1
+25 silly currentTree ├── ansi-bgred@0.1.1
+25 silly currentTree ├── ansi-bgwhite@0.1.1
+25 silly currentTree ├── ansi-bgyellow@0.1.1
+25 silly currentTree ├── ansi-black@0.1.1
+25 silly currentTree ├── ansi-blue@0.1.1
+25 silly currentTree ├── ansi-bold@0.1.1
+25 silly currentTree ├── ansi-colors@0.2.0
+25 silly currentTree ├── ansi-cyan@0.1.1
+25 silly currentTree ├── ansi-dim@0.1.1
+25 silly currentTree ├── ansi-gray@0.1.1
+25 silly currentTree ├── ansi-green@0.1.1
+25 silly currentTree ├── ansi-grey@0.1.1
+25 silly currentTree ├── ansi-hidden@0.1.1
+25 silly currentTree ├── ansi-inverse@0.1.1
+25 silly currentTree ├── ansi-italic@0.1.1
+25 silly currentTree ├── ansi-magenta@0.1.1
+25 silly currentTree ├── ansi-red@0.1.1
+25 silly currentTree ├── ansi-regex@2.1.1
+25 silly currentTree ├── ansi-reset@0.1.1
+25 silly currentTree ├── ansi-strikethrough@0.1.1
+25 silly currentTree ├── ansi-underline@0.1.1
+25 silly currentTree ├── ansi-white@0.1.1
+25 silly currentTree ├── ansi-wrap@0.1.0
+25 silly currentTree ├── ansi-yellow@0.1.1
+25 silly currentTree ├── aproba@1.2.0
+25 silly currentTree ├── are-we-there-yet@1.1.5
+25 silly currentTree ├── arr-flatten@1.1.0
+25 silly currentTree ├─┬ arr-swap@1.0.1
+25 silly currentTree │ └── is-number@3.0.0
+25 silly currentTree ├── bindings@1.3.0
+25 silly currentTree ├── bl@1.2.2
+25 silly currentTree ├── browser-serialport@2.1.0
+25 silly currentTree ├── buffer-alloc-unsafe@1.1.0
+25 silly currentTree ├── buffer-alloc@1.2.0
+25 silly currentTree ├── buffer-fill@1.0.0
+25 silly currentTree ├─┬ choices-separator@2.0.0
+25 silly currentTree │ └── debug@2.6.9
+25 silly currentTree ├── chownr@1.0.1
+25 silly currentTree ├─┬ clone-deep@1.0.0
+25 silly currentTree │ └── kind-of@5.1.0
+25 silly currentTree ├── code-point-at@1.1.0
+25 silly currentTree ├── collection-visit@1.0.0
+25 silly currentTree ├── commander@2.16.0
+25 silly currentTree ├── component-emitter@1.2.1
+25 silly currentTree ├── console-control-strings@1.1.0
+25 silly currentTree ├── copy-descriptor@0.1.1
+25 silly currentTree ├── core-util-is@1.0.2
+25 silly currentTree ├── debug@3.1.0
+25 silly currentTree ├── decompress-response@3.3.0
+25 silly currentTree ├── deep-extend@0.6.0
+25 silly currentTree ├── define-property@1.0.0
+25 silly currentTree ├── delegates@1.0.0
+25 silly currentTree ├── detect-libc@1.0.3
+25 silly currentTree ├── end-of-stream@1.4.1
+25 silly currentTree ├── error-symbol@0.1.0
+25 silly currentTree ├── expand-template@1.1.1
+25 silly currentTree ├── extend-shallow@2.0.1
+25 silly currentTree ├─┬ firmata@0.19.1
+25 silly currentTree │ ├── prebuild-install@2.5.3
+25 silly currentTree │ └── serialport@6.0.5
+25 silly currentTree ├── for-in@1.0.2
+25 silly currentTree ├── for-own@1.0.0
+25 silly currentTree ├── fs-constants@1.0.0
+25 silly currentTree ├── gauge@2.7.4
+25 silly currentTree ├── github-from-package@0.0.0
+25 silly currentTree ├── has-unicode@2.0.1
+25 silly currentTree ├── info-symbol@0.1.0
+25 silly currentTree ├── inherits@2.0.3
+25 silly currentTree ├── ini@1.3.5
+25 silly currentTree ├─┬ is-accessor-descriptor@1.0.0
+25 silly currentTree │ └── kind-of@6.0.2
+25 silly currentTree ├── is-buffer@1.1.6
+25 silly currentTree ├─┬ is-data-descriptor@1.0.0
+25 silly currentTree │ └── kind-of@6.0.2
+25 silly currentTree ├─┬ is-descriptor@1.0.2
+25 silly currentTree │ └── kind-of@6.0.2
+25 silly currentTree ├── is-extendable@0.1.1
+25 silly currentTree ├── is-fullwidth-code-point@1.0.0
+25 silly currentTree ├── is-number@6.0.0
+25 silly currentTree ├── is-plain-object@2.0.4
+25 silly currentTree ├── is-windows@1.0.2
+25 silly currentTree ├── isarray@1.0.0
+25 silly currentTree ├── isobject@3.0.1
+25 silly currentTree ├── kind-of@3.2.2
+25 silly currentTree ├── koalas@1.0.2
+25 silly currentTree ├── lazy-cache@2.0.2
+25 silly currentTree ├── log-ok@0.1.1
+25 silly currentTree ├── log-utils@0.2.1
+25 silly currentTree ├── map-visit@1.0.0
+25 silly currentTree ├── mimic-response@1.0.1
+25 silly currentTree ├── minimist@1.2.0
+25 silly currentTree ├─┬ mixin-object@2.0.1
+25 silly currentTree │ └── for-in@0.1.8
+25 silly currentTree ├─┬ mkdirp@0.5.1
+25 silly currentTree │ └── minimist@0.0.8
+25 silly currentTree ├── ms@2.0.0
+25 silly currentTree ├── mute-stream@0.0.7
+25 silly currentTree ├── nan@2.10.0
+25 silly currentTree ├── node-abi@2.4.3
+25 silly currentTree ├── noop-logger@0.1.1
+25 silly currentTree ├── npmlog@4.1.2
+25 silly currentTree ├── number-is-nan@1.0.1
+25 silly currentTree ├── object-assign@4.1.1
+25 silly currentTree ├─┬ object-copy@0.1.0
+25 silly currentTree │ ├── define-property@0.2.5
+25 silly currentTree │ ├── is-accessor-descriptor@0.1.6
+25 silly currentTree │ ├── is-data-descriptor@0.1.4
+25 silly currentTree │ └─┬ is-descriptor@0.1.6
+25 silly currentTree │   └── kind-of@5.1.0
+25 silly currentTree ├── object-visit@1.0.1
+25 silly currentTree ├── once@1.4.0
+25 silly currentTree ├── os-homedir@1.0.2
+25 silly currentTree ├── pointer-symbol@1.0.0
+25 silly currentTree ├── prebuild-install@4.0.0
+25 silly currentTree ├── process-nextick-args@2.0.0
+25 silly currentTree ├── promirepl@1.0.1
+25 silly currentTree ├─┬ prompt-actions@3.0.2
+25 silly currentTree │ └── debug@2.6.9
+25 silly currentTree ├── prompt-base@4.1.0
+25 silly currentTree ├─┬ prompt-checkbox@2.2.0
+25 silly currentTree │ └── debug@2.6.9
+25 silly currentTree ├─┬ prompt-choices@4.1.0
+25 silly currentTree │ ├── clone-deep@4.0.0
+25 silly currentTree │ ├── define-property@2.0.2
+25 silly currentTree │ ├── kind-of@6.0.2
+25 silly currentTree │ └── shallow-clone@3.0.0
+25 silly currentTree ├── prompt-list@3.2.0
+25 silly currentTree ├─┬ prompt-question@5.0.2
+25 silly currentTree │ └── kind-of@5.1.0
+25 silly currentTree ├─┬ prompt-radio@1.2.1
+25 silly currentTree │ └── debug@2.6.9
+25 silly currentTree ├── pump@2.0.1
+25 silly currentTree ├── radio-symbol@2.0.0
+25 silly currentTree ├── rc@1.2.8
+25 silly currentTree ├── readable-stream@2.3.6
+25 silly currentTree ├─┬ readline-ui@2.2.3
+25 silly currentTree │ ├── ansi-regex@3.0.0
+25 silly currentTree │ ├── debug@2.6.9
+25 silly currentTree │ ├── is-fullwidth-code-point@2.0.0
+25 silly currentTree │ ├── string-width@2.1.1
+25 silly currentTree │ └── strip-ansi@4.0.0
+25 silly currentTree ├─┬ readline-utils@2.2.3
+25 silly currentTree │ └── is-number@3.0.0
+25 silly currentTree ├── safe-buffer@5.1.2
+25 silly currentTree ├── semver@5.5.0
+25 silly currentTree ├── serialport@6.2.2
+25 silly currentTree ├── set-blocking@2.0.0
+25 silly currentTree ├── set-getter@0.1.0
+25 silly currentTree ├── set-value@3.0.0
+25 silly currentTree ├─┬ shallow-clone@1.0.0
+25 silly currentTree │ └── kind-of@5.1.0
+25 silly currentTree ├── signal-exit@3.0.2
+25 silly currentTree ├── simple-concat@1.0.0
+25 silly currentTree ├── simple-get@2.8.1
+25 silly currentTree ├─┬ static-extend@0.1.2
+25 silly currentTree │ ├── define-property@0.2.5
+25 silly currentTree │ ├─┬ is-accessor-descriptor@0.1.6
+25 silly currentTree │ │ └── kind-of@3.2.2
+25 silly currentTree │ ├─┬ is-data-descriptor@0.1.4
+25 silly currentTree │ │ └── kind-of@3.2.2
+25 silly currentTree │ ├── is-descriptor@0.1.6
+25 silly currentTree │ └── kind-of@5.1.0
+25 silly currentTree ├── string_decoder@1.1.1
+25 silly currentTree ├── string-width@1.0.2
+25 silly currentTree ├── strip-ansi@3.0.1
+25 silly currentTree ├── strip-color@0.1.0
+25 silly currentTree ├── strip-json-comments@2.0.1
+25 silly currentTree ├── success-symbol@0.1.0
+25 silly currentTree ├─┬ tar-fs@1.16.3
+25 silly currentTree │ └── pump@1.0.3
+25 silly currentTree ├── tar-stream@1.6.1
+25 silly currentTree ├─┬ terminal-paginator@2.0.2
+25 silly currentTree │ └── debug@2.6.9
+25 silly currentTree ├── time-stamp@1.1.0
+25 silly currentTree ├── to-buffer@1.1.1
+25 silly currentTree ├── to-object-path@0.3.0
+25 silly currentTree ├── toggle-array@1.0.1
+25 silly currentTree ├── tunnel-agent@0.6.0
+25 silly currentTree ├── util-deprecate@1.0.2
+25 silly currentTree ├── warning-symbol@0.1.0
+25 silly currentTree ├── which-pm-runs@1.0.0
+25 silly currentTree ├── wide-align@1.1.3
+25 silly currentTree ├─┬ window-size@1.1.0
+25 silly currentTree │ └── is-number@3.0.0
+25 silly currentTree ├── wrappy@1.0.2
+25 silly currentTree └── xtend@4.0.1
+26 silly idealTree firmata_test@1.0.0
+26 silly idealTree ├── @serialport/parser-byte-length@1.0.5
+26 silly idealTree ├── @serialport/parser-cctalk@1.0.5
+26 silly idealTree ├── @serialport/parser-delimiter@1.0.5
+26 silly idealTree ├── @serialport/parser-readline@1.0.5
+26 silly idealTree ├── @serialport/parser-ready@1.0.5
+26 silly idealTree ├── @serialport/parser-regex@1.0.5
+26 silly idealTree ├── ansi-bgblack@0.1.1
+26 silly idealTree ├── ansi-bgblue@0.1.1
+26 silly idealTree ├── ansi-bgcyan@0.1.1
+26 silly idealTree ├── ansi-bggreen@0.1.1
+26 silly idealTree ├── ansi-bgmagenta@0.1.1
+26 silly idealTree ├── ansi-bgred@0.1.1
+26 silly idealTree ├── ansi-bgwhite@0.1.1
+26 silly idealTree ├── ansi-bgyellow@0.1.1
+26 silly idealTree ├── ansi-black@0.1.1
+26 silly idealTree ├── ansi-blue@0.1.1
+26 silly idealTree ├── ansi-bold@0.1.1
+26 silly idealTree ├── ansi-colors@0.2.0
+26 silly idealTree ├── ansi-cyan@0.1.1
+26 silly idealTree ├── ansi-dim@0.1.1
+26 silly idealTree ├── ansi-gray@0.1.1
+26 silly idealTree ├── ansi-green@0.1.1
+26 silly idealTree ├── ansi-grey@0.1.1
+26 silly idealTree ├── ansi-hidden@0.1.1
+26 silly idealTree ├── ansi-inverse@0.1.1
+26 silly idealTree ├── ansi-italic@0.1.1
+26 silly idealTree ├── ansi-magenta@0.1.1
+26 silly idealTree ├── ansi-red@0.1.1
+26 silly idealTree ├── ansi-regex@2.1.1
+26 silly idealTree ├── ansi-reset@0.1.1
+26 silly idealTree ├── ansi-strikethrough@0.1.1
+26 silly idealTree ├── ansi-underline@0.1.1
+26 silly idealTree ├── ansi-white@0.1.1
+26 silly idealTree ├── ansi-wrap@0.1.0
+26 silly idealTree ├── ansi-yellow@0.1.1
+26 silly idealTree ├── aproba@1.2.0
+26 silly idealTree ├── are-we-there-yet@1.1.5
+26 silly idealTree ├── arr-flatten@1.1.0
+26 silly idealTree ├─┬ arr-swap@1.0.1
+26 silly idealTree │ └── is-number@3.0.0
+26 silly idealTree ├── bindings@1.3.0
+26 silly idealTree ├── bl@1.2.2
+26 silly idealTree ├── browser-serialport@2.1.0
+26 silly idealTree ├── buffer-alloc-unsafe@1.1.0
+26 silly idealTree ├── buffer-alloc@1.2.0
+26 silly idealTree ├── buffer-fill@1.0.0
+26 silly idealTree ├─┬ choices-separator@2.0.0
+26 silly idealTree │ └── debug@2.6.9
+26 silly idealTree ├── chownr@1.0.1
+26 silly idealTree ├─┬ clone-deep@1.0.0
+26 silly idealTree │ └── kind-of@5.1.0
+26 silly idealTree ├── code-point-at@1.1.0
+26 silly idealTree ├── collection-visit@1.0.0
+26 silly idealTree ├── commander@2.16.0
+26 silly idealTree ├── component-emitter@1.2.1
+26 silly idealTree ├── console-control-strings@1.1.0
+26 silly idealTree ├── copy-descriptor@0.1.1
+26 silly idealTree ├── core-util-is@1.0.2
+26 silly idealTree ├── debug@3.1.0
+26 silly idealTree ├── decompress-response@3.3.0
+26 silly idealTree ├── deep-extend@0.6.0
+26 silly idealTree ├── define-property@1.0.0
+26 silly idealTree ├── delegates@1.0.0
+26 silly idealTree ├── detect-libc@1.0.3
+26 silly idealTree ├── end-of-stream@1.4.1
+26 silly idealTree ├── error-symbol@0.1.0
+26 silly idealTree ├── expand-template@1.1.1
+26 silly idealTree ├── extend-shallow@2.0.1
+26 silly idealTree ├─┬ firmata@0.19.1
+26 silly idealTree │ ├── prebuild-install@2.5.3
+26 silly idealTree │ └── serialport@6.0.5
+26 silly idealTree ├── for-in@1.0.2
+26 silly idealTree ├── for-own@1.0.0
+26 silly idealTree ├── fs-constants@1.0.0
+26 silly idealTree ├── gauge@2.7.4
+26 silly idealTree ├── github-from-package@0.0.0
+26 silly idealTree ├── has-unicode@2.0.1
+26 silly idealTree ├── info-symbol@0.1.0
+26 silly idealTree ├── inherits@2.0.3
+26 silly idealTree ├── ini@1.3.5
+26 silly idealTree ├─┬ is-accessor-descriptor@1.0.0
+26 silly idealTree │ └── kind-of@6.0.2
+26 silly idealTree ├── is-buffer@1.1.6
+26 silly idealTree ├─┬ is-data-descriptor@1.0.0
+26 silly idealTree │ └── kind-of@6.0.2
+26 silly idealTree ├─┬ is-descriptor@1.0.2
+26 silly idealTree │ └── kind-of@6.0.2
+26 silly idealTree ├── is-extendable@0.1.1
+26 silly idealTree ├── is-fullwidth-code-point@1.0.0
+26 silly idealTree ├── is-number@6.0.0
+26 silly idealTree ├── is-plain-object@2.0.4
+26 silly idealTree ├── is-windows@1.0.2
+26 silly idealTree ├── isarray@1.0.0
+26 silly idealTree ├── isobject@3.0.1
+26 silly idealTree ├── kind-of@3.2.2
+26 silly idealTree ├── koalas@1.0.2
+26 silly idealTree ├── lazy-cache@2.0.2
+26 silly idealTree ├── log-ok@0.1.1
+26 silly idealTree ├── log-utils@0.2.1
+26 silly idealTree ├── map-visit@1.0.0
+26 silly idealTree ├── mimic-response@1.0.1
+26 silly idealTree ├── minimist@1.2.0
+26 silly idealTree ├─┬ mixin-object@2.0.1
+26 silly idealTree │ └── for-in@0.1.8
+26 silly idealTree ├─┬ mkdirp@0.5.1
+26 silly idealTree │ └── minimist@0.0.8
+26 silly idealTree ├── ms@2.0.0
+26 silly idealTree ├── mute-stream@0.0.7
+26 silly idealTree ├── nan@2.10.0
+26 silly idealTree ├── node-abi@2.4.3
+26 silly idealTree ├── noop-logger@0.1.1
+26 silly idealTree ├── npmlog@4.1.2
+26 silly idealTree ├── number-is-nan@1.0.1
+26 silly idealTree ├── object-assign@4.1.1
+26 silly idealTree ├─┬ object-copy@0.1.0
+26 silly idealTree │ ├── define-property@0.2.5
+26 silly idealTree │ ├── is-accessor-descriptor@0.1.6
+26 silly idealTree │ ├── is-data-descriptor@0.1.4
+26 silly idealTree │ └─┬ is-descriptor@0.1.6
+26 silly idealTree │   └── kind-of@5.1.0
+26 silly idealTree ├── object-visit@1.0.1
+26 silly idealTree ├── once@1.4.0
+26 silly idealTree ├── os-homedir@1.0.2
+26 silly idealTree ├── pointer-symbol@1.0.0
+26 silly idealTree ├── prebuild-install@4.0.0
+26 silly idealTree ├── process-nextick-args@2.0.0
+26 silly idealTree ├── promirepl@1.0.1
+26 silly idealTree ├─┬ prompt-actions@3.0.2
+26 silly idealTree │ └── debug@2.6.9
+26 silly idealTree ├── prompt-base@4.1.0
+26 silly idealTree ├─┬ prompt-checkbox@2.2.0
+26 silly idealTree │ └── debug@2.6.9
+26 silly idealTree ├─┬ prompt-choices@4.1.0
+26 silly idealTree │ ├── clone-deep@4.0.0
+26 silly idealTree │ ├── define-property@2.0.2
+26 silly idealTree │ ├── kind-of@6.0.2
+26 silly idealTree │ └── shallow-clone@3.0.0
+26 silly idealTree ├── prompt-list@3.2.0
+26 silly idealTree ├─┬ prompt-question@5.0.2
+26 silly idealTree │ └── kind-of@5.1.0
+26 silly idealTree ├─┬ prompt-radio@1.2.1
+26 silly idealTree │ └── debug@2.6.9
+26 silly idealTree ├── pump@2.0.1
+26 silly idealTree ├── radio-symbol@2.0.0
+26 silly idealTree ├── rc@1.2.8
+26 silly idealTree ├── readable-stream@2.3.6
+26 silly idealTree ├─┬ readline-ui@2.2.3
+26 silly idealTree │ ├── ansi-regex@3.0.0
+26 silly idealTree │ ├── debug@2.6.9
+26 silly idealTree │ ├── is-fullwidth-code-point@2.0.0
+26 silly idealTree │ ├── string-width@2.1.1
+26 silly idealTree │ └── strip-ansi@4.0.0
+26 silly idealTree ├─┬ readline-utils@2.2.3
+26 silly idealTree │ └── is-number@3.0.0
+26 silly idealTree ├── safe-buffer@5.1.2
+26 silly idealTree ├── semver@5.5.0
+26 silly idealTree ├── serialport@6.2.2
+26 silly idealTree ├── set-blocking@2.0.0
+26 silly idealTree ├── set-getter@0.1.0
+26 silly idealTree ├── set-value@3.0.0
+26 silly idealTree ├─┬ shallow-clone@1.0.0
+26 silly idealTree │ └── kind-of@5.1.0
+26 silly idealTree ├── signal-exit@3.0.2
+26 silly idealTree ├── simple-concat@1.0.0
+26 silly idealTree ├── simple-get@2.8.1
+26 silly idealTree ├─┬ static-extend@0.1.2
+26 silly idealTree │ ├── define-property@0.2.5
+26 silly idealTree │ ├─┬ is-accessor-descriptor@0.1.6
+26 silly idealTree │ │ └── kind-of@3.2.2
+26 silly idealTree │ ├─┬ is-data-descriptor@0.1.4
+26 silly idealTree │ │ └── kind-of@3.2.2
+26 silly idealTree │ ├── is-descriptor@0.1.6
+26 silly idealTree │ └── kind-of@5.1.0
+26 silly idealTree ├── string_decoder@1.1.1
+26 silly idealTree ├── string-width@1.0.2
+26 silly idealTree ├── strip-ansi@3.0.1
+26 silly idealTree ├── strip-color@0.1.0
+26 silly idealTree ├── strip-json-comments@2.0.1
+26 silly idealTree ├── success-symbol@0.1.0
+26 silly idealTree ├─┬ tar-fs@1.16.3
+26 silly idealTree │ └── pump@1.0.3
+26 silly idealTree ├── tar-stream@1.6.1
+26 silly idealTree ├─┬ terminal-paginator@2.0.2
+26 silly idealTree │ └── debug@2.6.9
+26 silly idealTree ├── time-stamp@1.1.0
+26 silly idealTree ├── to-buffer@1.1.1
+26 silly idealTree ├── to-object-path@0.3.0
+26 silly idealTree ├── toggle-array@1.0.1
+26 silly idealTree ├── tunnel-agent@0.6.0
+26 silly idealTree ├── util-deprecate@1.0.2
+26 silly idealTree ├── warning-symbol@0.1.0
+26 silly idealTree ├── which-pm-runs@1.0.0
+26 silly idealTree ├── wide-align@1.1.3
+26 silly idealTree ├─┬ window-size@1.1.0
+26 silly idealTree │ └── is-number@3.0.0
+26 silly idealTree ├── wrappy@1.0.2
+26 silly idealTree └── xtend@4.0.1
+27 silly install generateActionsToTake
+28 timing stage:generateActionsToTake Completed in 120ms
+29 silly diffTrees action count 3
+30 silly diffTrees update prebuild-install@2.5.3
+31 silly diffTrees update serialport@6.0.5
+32 silly diffTrees update firmata@0.19.1
+33 silly decomposeActions action count 24
+34 silly decomposeActions unbuild prebuild-install@2.5.3
+35 silly decomposeActions remove prebuild-install@2.5.3
+36 silly decomposeActions fetch firmata@0.19.1
+37 silly decomposeActions extract firmata@0.19.1
+38 silly decomposeActions preinstall prebuild-install@2.5.3
+39 silly decomposeActions build prebuild-install@2.5.3
+40 silly decomposeActions install prebuild-install@2.5.3
+41 silly decomposeActions postinstall prebuild-install@2.5.3
+42 silly decomposeActions refresh-package-json prebuild-install@2.5.3
+43 silly decomposeActions unbuild serialport@6.0.5
+44 silly decomposeActions remove serialport@6.0.5
+45 silly decomposeActions preinstall serialport@6.0.5
+46 silly decomposeActions build serialport@6.0.5
+47 silly decomposeActions install serialport@6.0.5
+48 silly decomposeActions postinstall serialport@6.0.5
+49 silly decomposeActions refresh-package-json serialport@6.0.5
+50 silly decomposeActions unbuild firmata@0.19.1
+51 silly decomposeActions remove firmata@0.19.1
+52 silly decomposeActions preinstall firmata@0.19.1
+53 silly decomposeActions build firmata@0.19.1
+54 silly decomposeActions install firmata@0.19.1
+55 silly decomposeActions postinstall firmata@0.19.1
+56 silly decomposeActions finalize firmata@0.19.1
+57 silly decomposeActions refresh-package-json firmata@0.19.1
+58 silly install executeActions
+59 silly doSerial global-install 24
+60 verbose correctMkdir /home/pi/.npm/_locks correctMkdir not in flight; initializing
+61 timing audit compress Completed in 17ms
+62 info audit Submitting payload of 10633bytes
+63 verbose lock using /home/pi/.npm/_locks/staging-34e22af039187c8c.lock for /home/pi/firmata/node_modules/.staging
+64 silly doParallel extract 1
+65 silly extract firmata@0.19.1
+66 silly tarball no local data for file:firmata. Extracting by manifest.
+67 info lifecycle firmata@0.19.1~prepack: firmata@0.19.1
+68 info lifecycle firmata@0.19.1~postpack: firmata@0.19.1
+69 silly extract file:firmata extracted to /home/pi/firmata/node_modules/.staging/firmata-d2569fda (530ms)
+70 timing action:extract Completed in 552ms
+71 verbose unlock done using /home/pi/.npm/_locks/staging-34e22af039187c8c.lock for /home/pi/firmata/node_modules/.staging
+72 timing stage:rollbackFailedOptional Completed in 1ms
+73 timing stage:runTopLevelLifecycles Completed in 7693ms
+74 silly saveTree firmata_test@1.0.0
+74 silly saveTree ├─┬ firmata@0.19.1
+74 silly saveTree │ ├── browser-serialport@2.1.0
+74 silly saveTree │ └─┬ serialport@6.0.5
+74 silly saveTree │   ├── bindings@1.3.0
+74 silly saveTree │   ├── commander@2.16.0
+74 silly saveTree │   ├─┬ debug@3.1.0
+74 silly saveTree │   │ └── ms@2.0.0
+74 silly saveTree │   ├── nan@2.10.0
+74 silly saveTree │   ├─┬ prebuild-install@2.5.3
+74 silly saveTree │   │ ├── detect-libc@1.0.3
+74 silly saveTree │   │ ├── expand-template@1.1.1
+74 silly saveTree │   │ ├── github-from-package@0.0.0
+74 silly saveTree │   │ ├── minimist@1.2.0
+74 silly saveTree │   │ ├─┬ mkdirp@0.5.1
+74 silly saveTree │   │ │ └── minimist@0.0.8
+74 silly saveTree │   │ ├─┬ node-abi@2.4.3
+74 silly saveTree │   │ │ └── semver@5.5.0
+74 silly saveTree │   │ ├── noop-logger@0.1.1
+74 silly saveTree │   │ ├─┬ npmlog@4.1.2
+74 silly saveTree │   │ │ ├─┬ are-we-there-yet@1.1.5
+74 silly saveTree │   │ │ │ ├── delegates@1.0.0
+74 silly saveTree │   │ │ │ └─┬ readable-stream@2.3.6
+74 silly saveTree │   │ │ │   ├── core-util-is@1.0.2
+74 silly saveTree │   │ │ │   ├── inherits@2.0.3
+74 silly saveTree │   │ │ │   ├── isarray@1.0.0
+74 silly saveTree │   │ │ │   ├── process-nextick-args@2.0.0
+74 silly saveTree │   │ │ │   ├── safe-buffer@5.1.2
+74 silly saveTree │   │ │ │   ├── string_decoder@1.1.1
+74 silly saveTree │   │ │ │   └── util-deprecate@1.0.2
+74 silly saveTree │   │ │ ├── console-control-strings@1.1.0
+74 silly saveTree │   │ │ ├─┬ gauge@2.7.4
+74 silly saveTree │   │ │ │ ├── aproba@1.2.0
+74 silly saveTree │   │ │ │ ├── has-unicode@2.0.1
+74 silly saveTree │   │ │ │ ├── object-assign@4.1.1
+74 silly saveTree │   │ │ │ ├── signal-exit@3.0.2
+74 silly saveTree │   │ │ │ ├─┬ string-width@1.0.2
+74 silly saveTree │   │ │ │ │ ├── code-point-at@1.1.0
+74 silly saveTree │   │ │ │ │ ├─┬ is-fullwidth-code-point@1.0.0
+74 silly saveTree │   │ │ │ │ │ └── number-is-nan@1.0.1
+74 silly saveTree │   │ │ │ │ └─┬ strip-ansi@3.0.1
+74 silly saveTree │   │ │ │ │   └── ansi-regex@2.1.1
+74 silly saveTree │   │ │ │ ├── strip-ansi@3.0.1
+74 silly saveTree │   │ │ │ └── wide-align@1.1.3
+74 silly saveTree │   │ │ └── set-blocking@2.0.0
+74 silly saveTree │   │ ├── os-homedir@1.0.2
+74 silly saveTree │   │ ├─┬ pump@2.0.1
+74 silly saveTree │   │ │ ├─┬ end-of-stream@1.4.1
+74 silly saveTree │   │ │ │ └─┬ once@1.4.0
+74 silly saveTree │   │ │ │   └── wrappy@1.0.2
+74 silly saveTree │   │ │ └── once@1.4.0
+74 silly saveTree │   │ ├─┬ rc@1.2.8
+74 silly saveTree │   │ │ ├── deep-extend@0.6.0
+74 silly saveTree │   │ │ ├── ini@1.3.5
+74 silly saveTree │   │ │ └── strip-json-comments@2.0.1
+74 silly saveTree │   │ ├─┬ simple-get@2.8.1
+74 silly saveTree │   │ │ ├─┬ decompress-response@3.3.0
+74 silly saveTree │   │ │ │ └── mimic-response@1.0.1
+74 silly saveTree │   │ │ └── simple-concat@1.0.0
+74 silly saveTree │   │ ├─┬ tar-fs@1.16.3
+74 silly saveTree │   │ │ ├── chownr@1.0.1
+74 silly saveTree │   │ │ ├── pump@1.0.3
+74 silly saveTree │   │ │ └─┬ tar-stream@1.6.1
+74 silly saveTree │   │ │   ├── bl@1.2.2
+74 silly saveTree │   │ │   ├─┬ buffer-alloc@1.2.0
+74 silly saveTree │   │ │   │ ├── buffer-alloc-unsafe@1.1.0
+74 silly saveTree │   │ │   │ └── buffer-fill@1.0.0
+74 silly saveTree │   │ │   ├── fs-constants@1.0.0
+74 silly saveTree │   │ │   ├── to-buffer@1.1.1
+74 silly saveTree │   │ │   └── xtend@4.0.1
+74 silly saveTree │   │ ├── tunnel-agent@0.6.0
+74 silly saveTree │   │ └── which-pm-runs@1.0.0
+74 silly saveTree │   ├── promirepl@1.0.1
+74 silly saveTree │   ├─┬ prompt-list@3.2.0
+74 silly saveTree │   │ ├─┬ ansi-cyan@0.1.1
+74 silly saveTree │   │ │ └── ansi-wrap@0.1.0
+74 silly saveTree │   │ ├── ansi-dim@0.1.1
+74 silly saveTree │   │ └─┬ prompt-radio@1.2.1
+74 silly saveTree │   │   ├── debug@2.6.9
+74 silly saveTree │   │   └─┬ prompt-checkbox@2.2.0
+74 silly saveTree │   │     ├── debug@2.6.9
+74 silly saveTree │   │     └─┬ prompt-base@4.1.0
+74 silly saveTree │   │       ├── component-emitter@1.2.1
+74 silly saveTree │   │       ├── koalas@1.0.2
+74 silly saveTree │   │       ├─┬ log-utils@0.2.1
+74 silly saveTree │   │       │ ├─┬ ansi-colors@0.2.0
+74 silly saveTree │   │       │ │ ├── ansi-bgblack@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgblue@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgcyan@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bggreen@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgmagenta@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgred@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgwhite@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bgyellow@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-black@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-blue@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-bold@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-gray@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-green@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-grey@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-hidden@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-inverse@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-italic@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-magenta@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-red@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-reset@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-strikethrough@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-underline@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-white@0.1.1
+74 silly saveTree │   │       │ │ ├── ansi-yellow@0.1.1
+74 silly saveTree │   │       │ │ └─┬ lazy-cache@2.0.2
+74 silly saveTree │   │       │ │   └─┬ set-getter@0.1.0
+74 silly saveTree │   │       │ │     └─┬ to-object-path@0.3.0
+74 silly saveTree │   │       │ │       └─┬ kind-of@3.2.2
+74 silly saveTree │   │       │ │         └── is-buffer@1.1.6
+74 silly saveTree │   │       │ ├── error-symbol@0.1.0
+74 silly saveTree │   │       │ ├── info-symbol@0.1.0
+74 silly saveTree │   │       │ ├─┬ log-ok@0.1.1
+74 silly saveTree │   │       │ │ └── success-symbol@0.1.0
+74 silly saveTree │   │       │ ├── success-symbol@0.1.0
+74 silly saveTree │   │       │ ├── time-stamp@1.1.0
+74 silly saveTree │   │       │ └── warning-symbol@0.1.0
+74 silly saveTree │   │       ├─┬ prompt-actions@3.0.2
+74 silly saveTree │   │       │ └── debug@2.6.9
+74 silly saveTree │   │       ├─┬ prompt-question@5.0.2
+74 silly saveTree │   │       │ ├─┬ clone-deep@1.0.0
+74 silly saveTree │   │       │ │ ├─┬ for-own@1.0.0
+74 silly saveTree │   │       │ │ │ └── for-in@1.0.2
+74 silly saveTree │   │       │ │ ├─┬ is-plain-object@2.0.4
+74 silly saveTree │   │       │ │ │ └── isobject@3.0.1
+74 silly saveTree │   │       │ │ ├── kind-of@5.1.0
+74 silly saveTree │   │       │ │ └─┬ shallow-clone@1.0.0
+74 silly saveTree │   │       │ │   ├── is-extendable@0.1.1
+74 silly saveTree │   │       │ │   ├── kind-of@5.1.0
+74 silly saveTree │   │       │ │   └─┬ mixin-object@2.0.1
+74 silly saveTree │   │       │ │     └── for-in@0.1.8
+74 silly saveTree │   │       │ ├─┬ define-property@1.0.0
+74 silly saveTree │   │       │ │ └─┬ is-descriptor@1.0.2
+74 silly saveTree │   │       │ │   ├─┬ is-accessor-descriptor@1.0.0
+74 silly saveTree │   │       │ │   │ └── kind-of@6.0.2
+74 silly saveTree │   │       │ │   ├─┬ is-data-descriptor@1.0.0
+74 silly saveTree │   │       │ │   │ └── kind-of@6.0.2
+74 silly saveTree │   │       │ │   └── kind-of@6.0.2
+74 silly saveTree │   │       │ ├── isobject@3.0.1
+74 silly saveTree │   │       │ ├── kind-of@5.1.0
+74 silly saveTree │   │       │ └─┬ prompt-choices@4.1.0
+74 silly saveTree │   │       │   ├── arr-flatten@1.1.0
+74 silly saveTree │   │       │   ├─┬ arr-swap@1.0.1
+74 silly saveTree │   │       │   │ └── is-number@3.0.0
+74 silly saveTree │   │       │   ├─┬ choices-separator@2.0.0
+74 silly saveTree │   │       │   │ ├── debug@2.6.9
+74 silly saveTree │   │       │   │ └── strip-color@0.1.0
+74 silly saveTree │   │       │   ├─┬ clone-deep@4.0.0
+74 silly saveTree │   │       │   │ ├── kind-of@6.0.2
+74 silly saveTree │   │       │   │ └── shallow-clone@3.0.0
+74 silly saveTree │   │       │   ├─┬ collection-visit@1.0.0
+74 silly saveTree │   │       │   │ ├─┬ map-visit@1.0.0
+74 silly saveTree │   │       │   │ │ └── object-visit@1.0.1
+74 silly saveTree │   │       │   │ └── object-visit@1.0.1
+74 silly saveTree │   │       │   ├── define-property@2.0.2
+74 silly saveTree │   │       │   ├── is-number@6.0.0
+74 silly saveTree │   │       │   ├── kind-of@6.0.2
+74 silly saveTree │   │       │   ├── pointer-symbol@1.0.0
+74 silly saveTree │   │       │   ├─┬ radio-symbol@2.0.0
+74 silly saveTree │   │       │   │ └── is-windows@1.0.2
+74 silly saveTree │   │       │   ├── set-value@3.0.0
+74 silly saveTree │   │       │   ├── strip-color@0.1.0
+74 silly saveTree │   │       │   ├─┬ terminal-paginator@2.0.2
+74 silly saveTree │   │       │   │ ├── debug@2.6.9
+74 silly saveTree │   │       │   │ └── extend-shallow@2.0.1
+74 silly saveTree │   │       │   └── toggle-array@1.0.1
+74 silly saveTree │   │       ├─┬ readline-ui@2.2.3
+74 silly saveTree │   │       │ ├── debug@2.6.9
+74 silly saveTree │   │       │ ├─┬ readline-utils@2.2.3
+74 silly saveTree │   │       │ │ ├── is-number@3.0.0
+74 silly saveTree │   │       │ │ ├── mute-stream@0.0.7
+74 silly saveTree │   │       │ │ └─┬ window-size@1.1.0
+74 silly saveTree │   │       │ │   └── is-number@3.0.0
+74 silly saveTree │   │       │ └─┬ string-width@2.1.1
+74 silly saveTree │   │       │   ├── is-fullwidth-code-point@2.0.0
+74 silly saveTree │   │       │   └─┬ strip-ansi@4.0.0
+74 silly saveTree │   │       │     └── ansi-regex@3.0.0
+74 silly saveTree │   │       ├── readline-utils@2.2.3
+74 silly saveTree │   │       └─┬ static-extend@0.1.2
+74 silly saveTree │   │         ├─┬ define-property@0.2.5
+74 silly saveTree │   │         │ └─┬ is-descriptor@0.1.6
+74 silly saveTree │   │         │   ├─┬ is-accessor-descriptor@0.1.6
+74 silly saveTree │   │         │   │ └── kind-of@3.2.2
+74 silly saveTree │   │         │   ├─┬ is-data-descriptor@0.1.4
+74 silly saveTree │   │         │   │ └── kind-of@3.2.2
+74 silly saveTree │   │         │   └── kind-of@5.1.0
+74 silly saveTree │   │         └─┬ object-copy@0.1.0
+74 silly saveTree │   │           ├── copy-descriptor@0.1.1
+74 silly saveTree │   │           └─┬ define-property@0.2.5
+74 silly saveTree │   │             └─┬ is-descriptor@0.1.6
+74 silly saveTree │   │               ├── is-accessor-descriptor@0.1.6
+74 silly saveTree │   │               ├── is-data-descriptor@0.1.4
+74 silly saveTree │   │               └── kind-of@5.1.0
+74 silly saveTree │   └── safe-buffer@5.1.2
+74 silly saveTree └─┬ serialport@6.2.2
+74 silly saveTree   ├── @serialport/parser-byte-length@1.0.5
+74 silly saveTree   ├── @serialport/parser-cctalk@1.0.5
+74 silly saveTree   ├── @serialport/parser-delimiter@1.0.5
+74 silly saveTree   ├── @serialport/parser-readline@1.0.5
+74 silly saveTree   ├── @serialport/parser-ready@1.0.5
+74 silly saveTree   ├── @serialport/parser-regex@1.0.5
+74 silly saveTree   └── prebuild-install@4.0.0
+75 warn firmata_test@1.0.0 No description
+76 warn firmata_test@1.0.0 No repository field.
+77 verbose stack Error: ENOENT: no such file or directory, rename '/home/pi/firmata/node_modules/.staging/firmata-d2569fda/node_modules/prebuild-install' -> '/home/pi/firmata/node_modules/.staging/prebuild-install-4a8a6604'
+78 verbose cwd /home/pi/firmata/node_modules
+79 verbose Linux 4.14.50-v7+
+80 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "firmata"
+81 verbose node v10.6.0
+82 verbose npm  v6.1.0
+83 error path /home/pi/firmata/node_modules/.staging/firmata-d2569fda/node_modules/prebuild-install
+84 error code ENOENT
+85 error errno -2
+86 error syscall rename
+87 error enoent ENOENT: no such file or directory, rename '/home/pi/firmata/node_modules/.staging/firmata-d2569fda/node_modules/prebuild-install' -> '/home/pi/firmata/node_modules/.staging/prebuild-install-4a8a6604'
+88 error enoent This is related to npm not being able to find a file.
+89 verbose exit [ -2, true ]

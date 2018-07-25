@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'firmata' ]
+2 info using npm@6.1.0
+3 info using node@v10.6.0
+4 verbose npm-session cc861d77716e4255
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 304 https://registry.npmjs.org/firmata 383ms (from cache)
+8 silly pacote tag manifest for firmata@latest fetched in 443ms
+9 timing stage:loadCurrentTree Completed in 1425ms
+10 silly install loadIdealTree
+11 silly install cloneCurrentTreeToIdealTree
+12 timing stage:loadIdealTree:cloneCurrentTree Completed in 2ms
+13 silly install loadShrinkwrap
+14 timing stage:loadIdealTree:loadShrinkwrap Completed in 32ms
+15 silly install loadAllDepsIntoIdealTree
+16 timing stage:rollbackFailedOptional Completed in 2ms
+17 timing stage:runTopLevelLifecycles Completed in 1470ms
+18 silly saveTree firmata@0.19.1
+18 silly saveTree └─┬ serialport@6.0.5
+18 silly saveTree   └── prebuild-install@2.5.3
+19 verbose stack Error: Refusing to install package with name "firmata" under a package
+19 verbose stack also called "firmata". Did you name your project the same
+19 verbose stack as the dependency you're installing?
+19 verbose stack
+19 verbose stack For more information, see:
+19 verbose stack     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+19 verbose stack     at checkSelf (/usr/lib/node_modules/npm/lib/install/validate-args.js:64:14)
+19 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+19 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+19 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+19 verbose stack     at hasMinimumFields (/usr/lib/node_modules/npm/lib/install/validate-args.js:30:12)
+19 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+19 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+19 verbose stack     at chain (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+19 verbose stack     at /usr/lib/node_modules/npm/lib/install/validate-args.js:16:5
+19 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+19 verbose stack     at Array.forEach (<anonymous>)
+19 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+19 verbose stack     at Array.forEach (<anonymous>)
+19 verbose stack     at asyncMap (/usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+19 verbose stack     at module.exports (/usr/lib/node_modules/npm/lib/install/validate-args.js:15:3)
+19 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+20 verbose cwd /home/pi/firmata/node_modules/firmata
+21 verbose Linux 4.14.50-v7+
+22 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "firmata"
+23 verbose node v10.6.0
+24 verbose npm  v6.1.0
+25 error code ENOSELF
+26 error Refusing to install package with name "firmata" under a package
+26 error also called "firmata". Did you name your project the same
+26 error as the dependency you're installing?
+26 error
+26 error For more information, see:
+26 error     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-algorithm>
+27 verbose exit [ 1, true ]

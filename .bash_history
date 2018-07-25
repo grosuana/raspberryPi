@@ -138,3 +138,74 @@ sudo git pull https://github.com/grosuana/raspberryPi
 ls
 git add
 exit
+ls
+git commit
+git pull https://github.com/grosuana/raspberryPi
+git status
+git checkout -- .
+ls
+cd raspi/
+ls
+mv main/ ../
+ls
+mv module/ ../
+ls
+cd ..
+ls
+cd raspi/
+ls
+cd ..
+ls
+rm raspi/
+rm -r raspi/
+ls
+git add .
+ls
+git commit -m 'raspberry folder'
+git config --global user.email talkative_anna@yahoo.com
+git config --global user.name grosuana
+git commit -m 'raspberry folder'
+git push
+git remote add raspberryPi https://github.com/grosuana/raspberryPi
+git push raspberryPi 
+git push --set-upstream raspberryPi master 
+ls
+cd main/
+ls
+cd
+ls
+exit
+ls
+mkdir firmata
+ls
+cd firmata/
+npm init
+touch index.js
+ls
+vim package.json 
+sudo npm install -g firmata
+firmata
+sudo raspi-config 
+cat /dev/tty*
+ls
+cd /dev/
+ls
+cd ..
+cd /boot
+ls
+sudo vim cmdline.txt 
+cd 
+sudo vim /etc
+sudo vim /etc/inittab
+cd /etc/
+ls
+cd init
+ls
+cd ..
+la | grep inittab
+tree | grep inittab
+tree
+sudo apt-get install tree
+tree | grep inittab
+reboot
+sudo shutdown -r now

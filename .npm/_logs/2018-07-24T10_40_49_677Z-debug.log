@@ -1,0 +1,255 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '--unsafe-perm',
+1 verbose cli   'firmata' ]
+2 info using npm@6.1.0
+3 info using node@v10.6.0
+4 verbose npm-session 0022f7383cdb8031
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly pacote directory manifest for undefined@file:firmata fetched in 47ms
+8 timing stage:loadCurrentTree Completed in 876ms
+9 silly install loadIdealTree
+10 silly install cloneCurrentTreeToIdealTree
+11 timing stage:loadIdealTree:cloneCurrentTree Completed in 1ms
+12 silly install loadShrinkwrap
+13 timing stage:loadIdealTree:loadShrinkwrap Completed in 11ms
+14 silly install loadAllDepsIntoIdealTree
+15 silly resolveWithNewModule firmata_test@1.0.0 checking installable status
+16 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 3062ms
+17 timing stage:loadIdealTree Completed in 3583ms
+18 silly currentTree lib
+19 silly idealTree lib
+19 silly idealTree └─┬ firmata_test@1.0.0
+19 silly idealTree   ├── @serialport/parser-byte-length@1.0.5
+19 silly idealTree   ├── @serialport/parser-cctalk@1.0.5
+19 silly idealTree   ├── @serialport/parser-delimiter@1.0.5
+19 silly idealTree   ├── @serialport/parser-readline@1.0.5
+19 silly idealTree   ├── @serialport/parser-ready@1.0.5
+19 silly idealTree   ├── @serialport/parser-regex@1.0.5
+19 silly idealTree   ├── ansi-bgblack@0.1.1
+19 silly idealTree   ├── ansi-bgblue@0.1.1
+19 silly idealTree   ├── ansi-bgcyan@0.1.1
+19 silly idealTree   ├── ansi-bggreen@0.1.1
+19 silly idealTree   ├── ansi-bgmagenta@0.1.1
+19 silly idealTree   ├── ansi-bgred@0.1.1
+19 silly idealTree   ├── ansi-bgwhite@0.1.1
+19 silly idealTree   ├── ansi-bgyellow@0.1.1
+19 silly idealTree   ├── ansi-black@0.1.1
+19 silly idealTree   ├── ansi-blue@0.1.1
+19 silly idealTree   ├── ansi-bold@0.1.1
+19 silly idealTree   ├── ansi-colors@0.2.0
+19 silly idealTree   ├── ansi-cyan@0.1.1
+19 silly idealTree   ├── ansi-dim@0.1.1
+19 silly idealTree   ├── ansi-gray@0.1.1
+19 silly idealTree   ├── ansi-green@0.1.1
+19 silly idealTree   ├── ansi-grey@0.1.1
+19 silly idealTree   ├── ansi-hidden@0.1.1
+19 silly idealTree   ├── ansi-inverse@0.1.1
+19 silly idealTree   ├── ansi-italic@0.1.1
+19 silly idealTree   ├── ansi-magenta@0.1.1
+19 silly idealTree   ├── ansi-red@0.1.1
+19 silly idealTree   ├── ansi-regex@2.1.1
+19 silly idealTree   ├── ansi-reset@0.1.1
+19 silly idealTree   ├── ansi-strikethrough@0.1.1
+19 silly idealTree   ├── ansi-underline@0.1.1
+19 silly idealTree   ├── ansi-white@0.1.1
+19 silly idealTree   ├── ansi-wrap@0.1.0
+19 silly idealTree   ├── ansi-yellow@0.1.1
+19 silly idealTree   ├── aproba@1.2.0
+19 silly idealTree   ├── are-we-there-yet@1.1.5
+19 silly idealTree   ├── arr-flatten@1.1.0
+19 silly idealTree   ├─┬ arr-swap@1.0.1
+19 silly idealTree   │ └── is-number@3.0.0
+19 silly idealTree   ├── bindings@1.3.0
+19 silly idealTree   ├── bl@1.2.2
+19 silly idealTree   ├── browser-serialport@2.1.0
+19 silly idealTree   ├── buffer-alloc-unsafe@1.1.0
+19 silly idealTree   ├── buffer-alloc@1.2.0
+19 silly idealTree   ├── buffer-fill@1.0.0
+19 silly idealTree   ├── build
+19 silly idealTree   ├─┬ choices-separator@2.0.0
+19 silly idealTree   │ └── debug@2.6.9
+19 silly idealTree   ├── chownr@1.0.1
+19 silly idealTree   ├─┬ clone-deep@1.0.0
+19 silly idealTree   │ └── kind-of@5.1.0
+19 silly idealTree   ├── code-point-at@1.1.0
+19 silly idealTree   ├── collection-visit@1.0.0
+19 silly idealTree   ├── commander@2.16.0
+19 silly idealTree   ├── component-emitter@1.2.1
+19 silly idealTree   ├── console-control-strings@1.1.0
+19 silly idealTree   ├── copy-descriptor@0.1.1
+19 silly idealTree   ├── core-util-is@1.0.2
+19 silly idealTree   ├── debug@3.1.0
+19 silly idealTree   ├── decompress-response@3.3.0
+19 silly idealTree   ├── deep-extend@0.6.0
+19 silly idealTree   ├── define-property@1.0.0
+19 silly idealTree   ├── delegates@1.0.0
+19 silly idealTree   ├── detect-libc@1.0.3
+19 silly idealTree   ├── end-of-stream@1.4.1
+19 silly idealTree   ├── error-symbol@0.1.0
+19 silly idealTree   ├── expand-template@1.1.1
+19 silly idealTree   ├── extend-shallow@2.0.1
+19 silly idealTree   ├─┬ firmata@0.19.1
+19 silly idealTree   │ ├── prebuild-install@2.5.3
+19 silly idealTree   │ └── serialport@6.0.5
+19 silly idealTree   ├── for-in@1.0.2
+19 silly idealTree   ├── for-own@1.0.0
+19 silly idealTree   ├── fs-constants@1.0.0
+19 silly idealTree   ├── gauge@2.7.4
+19 silly idealTree   ├── github-from-package@0.0.0
+19 silly idealTree   ├── has-unicode@2.0.1
+19 silly idealTree   ├── info-symbol@0.1.0
+19 silly idealTree   ├── inherits@2.0.3
+19 silly idealTree   ├── ini@1.3.5
+19 silly idealTree   ├─┬ is-accessor-descriptor@1.0.0
+19 silly idealTree   │ └── kind-of@6.0.2
+19 silly idealTree   ├── is-buffer@1.1.6
+19 silly idealTree   ├─┬ is-data-descriptor@1.0.0
+19 silly idealTree   │ └── kind-of@6.0.2
+19 silly idealTree   ├─┬ is-descriptor@1.0.2
+19 silly idealTree   │ └── kind-of@6.0.2
+19 silly idealTree   ├── is-extendable@0.1.1
+19 silly idealTree   ├── is-fullwidth-code-point@1.0.0
+19 silly idealTree   ├── is-number@6.0.0
+19 silly idealTree   ├── is-plain-object@2.0.4
+19 silly idealTree   ├── is-windows@1.0.2
+19 silly idealTree   ├── isarray@1.0.0
+19 silly idealTree   ├── isobject@3.0.1
+19 silly idealTree   ├── kind-of@3.2.2
+19 silly idealTree   ├── koalas@1.0.2
+19 silly idealTree   ├── lazy-cache@2.0.2
+19 silly idealTree   ├── log-ok@0.1.1
+19 silly idealTree   ├── log-utils@0.2.1
+19 silly idealTree   ├── map-visit@1.0.0
+19 silly idealTree   ├── mimic-response@1.0.1
+19 silly idealTree   ├── minimist@1.2.0
+19 silly idealTree   ├─┬ mixin-object@2.0.1
+19 silly idealTree   │ └── for-in@0.1.8
+19 silly idealTree   ├─┬ mkdirp@0.5.1
+19 silly idealTree   │ └── minimist@0.0.8
+19 silly idealTree   ├── ms@2.0.0
+19 silly idealTree   ├── mute-stream@0.0.7
+19 silly idealTree   ├── nan@2.10.0
+19 silly idealTree   ├── node-abi@2.4.3
+19 silly idealTree   ├── noop-logger@0.1.1
+19 silly idealTree   ├── npmlog@4.1.2
+19 silly idealTree   ├── number-is-nan@1.0.1
+19 silly idealTree   ├── object-assign@4.1.1
+19 silly idealTree   ├─┬ object-copy@0.1.0
+19 silly idealTree   │ ├── define-property@0.2.5
+19 silly idealTree   │ ├── is-accessor-descriptor@0.1.6
+19 silly idealTree   │ ├── is-data-descriptor@0.1.4
+19 silly idealTree   │ └─┬ is-descriptor@0.1.6
+19 silly idealTree   │   └── kind-of@5.1.0
+19 silly idealTree   ├── object-visit@1.0.1
+19 silly idealTree   ├── once@1.4.0
+19 silly idealTree   ├── os-homedir@1.0.2
+19 silly idealTree   ├── pointer-symbol@1.0.0
+19 silly idealTree   ├── prebuild-install@4.0.0
+19 silly idealTree   ├── process-nextick-args@2.0.0
+19 silly idealTree   ├── promirepl@1.0.1
+19 silly idealTree   ├─┬ prompt-actions@3.0.2
+19 silly idealTree   │ └── debug@2.6.9
+19 silly idealTree   ├── prompt-base@4.1.0
+19 silly idealTree   ├─┬ prompt-checkbox@2.2.0
+19 silly idealTree   │ └── debug@2.6.9
+19 silly idealTree   ├─┬ prompt-choices@4.1.0
+19 silly idealTree   │ ├── clone-deep@4.0.0
+19 silly idealTree   │ ├── define-property@2.0.2
+19 silly idealTree   │ ├── kind-of@6.0.2
+19 silly idealTree   │ └── shallow-clone@3.0.0
+19 silly idealTree   ├── prompt-list@3.2.0
+19 silly idealTree   ├─┬ prompt-question@5.0.2
+19 silly idealTree   │ └── kind-of@5.1.0
+19 silly idealTree   ├─┬ prompt-radio@1.2.1
+19 silly idealTree   │ └── debug@2.6.9
+19 silly idealTree   ├── pump@2.0.1
+19 silly idealTree   ├── radio-symbol@2.0.0
+19 silly idealTree   ├── rc@1.2.8
+19 silly idealTree   ├── readable-stream@2.3.6
+19 silly idealTree   ├─┬ readline-ui@2.2.3
+19 silly idealTree   │ ├── ansi-regex@3.0.0
+19 silly idealTree   │ ├── debug@2.6.9
+19 silly idealTree   │ ├── is-fullwidth-code-point@2.0.0
+19 silly idealTree   │ ├── string-width@2.1.1
+19 silly idealTree   │ └── strip-ansi@4.0.0
+19 silly idealTree   ├─┬ readline-utils@2.2.3
+19 silly idealTree   │ └── is-number@3.0.0
+19 silly idealTree   ├── safe-buffer@5.1.2
+19 silly idealTree   ├── semver@5.5.0
+19 silly idealTree   ├── serialport@6.2.2
+19 silly idealTree   ├── set-blocking@2.0.0
+19 silly idealTree   ├── set-getter@0.1.0
+19 silly idealTree   ├── set-value@3.0.0
+19 silly idealTree   ├─┬ shallow-clone@1.0.0
+19 silly idealTree   │ └── kind-of@5.1.0
+19 silly idealTree   ├── signal-exit@3.0.2
+19 silly idealTree   ├── simple-concat@1.0.0
+19 silly idealTree   ├── simple-get@2.8.1
+19 silly idealTree   ├─┬ static-extend@0.1.2
+19 silly idealTree   │ ├── define-property@0.2.5
+19 silly idealTree   │ ├─┬ is-accessor-descriptor@0.1.6
+19 silly idealTree   │ │ └── kind-of@3.2.2
+19 silly idealTree   │ ├─┬ is-data-descriptor@0.1.4
+19 silly idealTree   │ │ └── kind-of@3.2.2
+19 silly idealTree   │ ├── is-descriptor@0.1.6
+19 silly idealTree   │ └── kind-of@5.1.0
+19 silly idealTree   ├── string_decoder@1.1.1
+19 silly idealTree   ├── string-width@1.0.2
+19 silly idealTree   ├── strip-ansi@3.0.1
+19 silly idealTree   ├── strip-color@0.1.0
+19 silly idealTree   ├── strip-json-comments@2.0.1
+19 silly idealTree   ├── success-symbol@0.1.0
+19 silly idealTree   ├─┬ tar-fs@1.16.3
+19 silly idealTree   │ └── pump@1.0.3
+19 silly idealTree   ├── tar-stream@1.6.1
+19 silly idealTree   ├─┬ terminal-paginator@2.0.2
+19 silly idealTree   │ └── debug@2.6.9
+19 silly idealTree   ├── time-stamp@1.1.0
+19 silly idealTree   ├── to-buffer@1.1.1
+19 silly idealTree   ├── to-object-path@0.3.0
+19 silly idealTree   ├── toggle-array@1.0.1
+19 silly idealTree   ├── tunnel-agent@0.6.0
+19 silly idealTree   ├── util-deprecate@1.0.2
+19 silly idealTree   ├── warning-symbol@0.1.0
+19 silly idealTree   ├── which-pm-runs@1.0.0
+19 silly idealTree   ├── wide-align@1.1.3
+19 silly idealTree   ├─┬ window-size@1.1.0
+19 silly idealTree   │ └── is-number@3.0.0
+19 silly idealTree   ├── wrappy@1.0.2
+19 silly idealTree   └── xtend@4.0.1
+20 silly install generateActionsToTake
+21 warn checkPermissions Missing write access to /usr/lib/node_modules
+22 timing stage:rollbackFailedOptional Completed in 2ms
+23 timing stage:runTopLevelLifecycles Completed in 4536ms
+24 warn enoent ENOENT: no such file or directory, open '/home/pi/firmata/node_modules/build/package.json'
+25 verbose enoent This is related to npm not being able to find a file.
+26 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules'
+27 verbose cwd /home/pi
+28 verbose Linux 4.14.50-v7+
+29 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "--unsafe-perm" "firmata"
+30 verbose node v10.6.0
+31 verbose npm  v6.1.0
+32 error path /usr/lib/node_modules
+33 error code EACCES
+34 error errno -13
+35 error syscall access
+36 error Error: EACCES: permission denied, access '/usr/lib/node_modules'
+36 error  { [Error: EACCES: permission denied, access '/usr/lib/node_modules']
+36 error   stack:
+36 error    'Error: EACCES: permission denied, access \'/usr/lib/node_modules\'',
+36 error   errno: -13,
+36 error   code: 'EACCES',
+36 error   syscall: 'access',
+36 error   path: '/usr/lib/node_modules' }
+37 error The operation was rejected by your operating system.
+37 error It is likely you do not have the permissions to access this file as the current user
+37 error
+37 error If you believe this might be a permissions issue, please double-check the
+37 error permissions of the file and its containing directories, or try running
+37 error the command again as root/Administrator (though this is not recommended).
+38 verbose exit [ -13, true ]

@@ -53,7 +53,7 @@ let index = 0;
 
 //punem info in array
 
-setTimeout(async function() {
+async function run () {
     await info.updateInfo();
     let obj1 = {
         id: 1,
@@ -68,9 +68,9 @@ setTimeout(async function() {
     lcd.push(obj1);
     lcd.push(obj2);
     lcd.displayCurrent();
-}, 1)
+}
 
-
+run ();
 
 
 

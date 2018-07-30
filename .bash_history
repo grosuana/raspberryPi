@@ -209,3 +209,71 @@ sudo apt-get install tree
 tree | grep inittab
 reboot
 sudo shutdown -r now
+ls
+cd module/
+ls
+touch info.js
+npm install ip
+node info.js 
+cat /proc/cpuinfo | grep Serial | cut -d ' ' -f 2
+ls
+npm install child-process
+node info.js 
+ls
+cat id.txt 
+ls
+node info.js 
+ls
+node info.js 
+ls
+node info.js 
+vim id.txt 
+node info.js 
+vim id.txt 
+node info.js 
+rm id.txt 
+node info.js 
+sudo node index.js 
+ls
+touch raspiCommands.js
+sudo node index.js 
+sudo node raspiCommands.js
+ls
+cd module/
+lls
+ks
+ls
+cat raspiCommands.js 
+ls
+cd ..
+ls
+cd module/
+git add .
+cd ..
+ls
+git add .
+ps
+ps -aux
+ps -aux | grep git
+ls
+sudo git add .
+cd ..
+ls
+cd 
+git add .
+cd /home/pi/.git/
+ls
+cat index
+cat index.lock 
+rm index.lock 
+ls
+cd 
+ls
+cd module/
+git add .
+git commit -m 'get board ip and id'
+sudo git push
+ls
+node raspiCommands.js 
+ls
+exit

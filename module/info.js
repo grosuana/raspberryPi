@@ -27,13 +27,30 @@ async function updateInfo() {
         await getIp();
         await getId();
         information.id = _.toString(id).trim();
+        while (information.id[0] == 0) {
+            information.id = _.drop(information.id);
+            let i;
+            let info = '';
+            let length = information.id.length;
+            for (i = 0; i < length; i++) {
+                info = info + information.id[i];
+            }
+            information.id = info;
+
+        }
         information.ip = ip;
         resolve();
     })
 }
 
+async function update (){
+    await updateInfo();
+    setTimeout(update, 5000);
+}
+
+update();
 
 module.exports = {
-	updateInfo: updateInfo,
-	information: information
+    updateInfo: updateInfo,
+    information: information
 }
